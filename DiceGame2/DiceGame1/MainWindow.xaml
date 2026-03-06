@@ -1,0 +1,17 @@
+﻿<Window x:Class="DiceGame1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Dice Prototype Game — Меню" Height="320" Width="520" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Width="460">
+            <TextBlock Text="Игра: Кубики и Прототип" FontSize="22" FontWeight="Bold" TextAlignment="Center" Margin="0,0,0,12"/>
+            <TextBlock TextWrapping="Wrap" Text="Создайте исходный кубик (6 граней). Каждый раунд порождаются новые клоны из оригинала — к новым клонам можно применить модификатор. Бросай кубики и пытайся попасть в цель." Margin="0,0,0,12"/>
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                <Button Content="Начать игру" Width="120" Margin="6" Click="BtnStart_Click"/>
+                <Button Content="Правила" Width="120" Margin="6" Click="BtnRules_Click"/>
+                <Button Content="Выход" Width="120" Margin="6" Click="BtnExit_Click"/>
+            </StackPanel>
+            <TextBlock x:Name="LblBestMenu" Text="Лучший результат: 0" FontWeight="Bold" Margin="0,18,0,0" TextAlignment="Center"/>
+        </StackPanel>
+    </Grid>
+</Window>
